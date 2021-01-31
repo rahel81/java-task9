@@ -9,16 +9,16 @@ public class Post {
     private int replyUserId;
     private int getReplyPostId;
     private boolean friendsOnly;
-    private String buttonComments;
+    private CommentsInfo CommentsInfo;
     private int canPost;
     private boolean canClose;
     private boolean canOpen;
     private String copyright;
-    private String buttonLikes;
+    private LikesInfo likesInfo;
     private int userLikes;
     private int canLikes;
     private int canPublish;
-    private String buttonReposts;
+    private RepostsInfo RepostInfo;
     private int userReposted;
     private int viewsPost;
     private String postType;
@@ -95,12 +95,12 @@ public class Post {
         this.friendsOnly = friendsOnly;
     }
 
-    public String getButtonComments() {
-        return buttonComments;
+    public ru.netology.domain.post.CommentsInfo getCommentsInfo() {
+        return CommentsInfo;
     }
 
-    public void setButtonComments(String buttonComments) {
-        this.buttonComments = buttonComments;
+    public void setCommentsInfo(ru.netology.domain.post.CommentsInfo commentsInfo) {
+        CommentsInfo = commentsInfo;
     }
 
     public int getCanPost() {
@@ -135,12 +135,12 @@ public class Post {
         this.copyright = copyright;
     }
 
-    public String getButtonLikes() {
-        return buttonLikes;
+    public LikesInfo getLikesInfo() {
+        return likesInfo;
     }
 
-    public void setButtonLikes(String buttonLikes) {
-        this.buttonLikes = buttonLikes;
+    public void setLikesInfo(LikesInfo likesInfo) {
+        this.likesInfo = likesInfo;
     }
 
     public int getUserLikes() {
@@ -167,12 +167,12 @@ public class Post {
         this.canPublish = canPublish;
     }
 
-    public String getButtonReposts() {
-        return buttonReposts;
+    public RepostsInfo getRepostInfo() {
+        return RepostInfo;
     }
 
-    public void setButtonReposts(String buttonReposts) {
-        this.buttonReposts = buttonReposts;
+    public void setRepostInfo(RepostsInfo repostInfo) {
+        RepostInfo = repostInfo;
     }
 
     public int getUserReposted() {
